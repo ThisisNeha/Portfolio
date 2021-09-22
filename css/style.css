@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Norican&family=Averia+Serif+Libre:wght@700&family=Rampart+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Norican&family=Averia+Serif+Libre:wght@700&family=Rampart+One&display=swap");
 
 :root {
-  --primary: rgb(5, 133, 207) ;
+  --primary: rgb(5, 133, 207);
   --gray: #f3f4f6;
   --black: #06070a;
 }
 
 body {
-  display: block;font-family: 'Averia Serif Libre', cursive;
+  display: block;
+  font-family: "Averia Serif Libre", cursive;
   margin: 0;
   padding: 0;
   position: relative;
@@ -20,7 +21,7 @@ body {
 .main-heading {
   color: var(--primary);
   padding-top: 2rem;
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: "Averia Serif Libre", cursive;
 }
 
 hr {
@@ -41,40 +42,14 @@ label {
   padding-right: 1rem;
 }
 
-/** links **/
-
-.primary-link {
-  /* font-size: 1.1rem; */
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--primary);
-  width: max-content;
-  border: 1px solid var(--primary);
-  min-width: 140px;
-  border-radius: 1.5rem;
-  padding: 0.7rem 1.5rem;
-}
-
-.s-link {
-  text-decoration: none;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  background-image:  linear-gradient(to right,rgb(0, 157, 248) , rgb(61, 210, 255));
-  width: max-content;
-  min-width: 140px;
-  border-radius: 1.5rem;
-  padding: 0.7rem 1.5rem;
-}
-
-.s-link:hover,
-.primary-link:hover {
-  box-shadow: 0px 4px 6px 0 var(--primary);
-}
-
 /** nav **/
 
 .navigation {
-  background-image:  linear-gradient(to right,rgb(0, 157, 248) , rgb(82, 243, 255));
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 157, 248),
+    rgb(82, 243, 255)
+  );
   background-color: var(--primary);
   padding: 1rem 0rem;
   color: white;
@@ -83,21 +58,21 @@ label {
 
 .brand {
   text-align: left;
-  margin: 1rem;
-  padding-top:1rem ;
-  font-family: 'Norican', cursive;
+  margin: 1rem ;
+  padding-top: 1rem;
+  font-family: "Norican", cursive;
   font-size: 2rem;
 }
 
-.navigation ul {
+.navigation ul {display: flex;
+  justify-content: end;
   list-style: none;
-  text-align: right;
 }
 
 .navigation li {
   display: inline-block;
   padding: 0 1rem;
-  margin-right: 2rem ;
+  margin-right: 2rem;
 }
 
 .navigation a {
@@ -107,7 +82,7 @@ label {
 }
 
 .navigation a:hover {
- text-shadow: 0 1px rgb(255, 255, 255);
+  text-shadow: 0 1px rgb(255, 255, 255);
 }
 
 .navigation .active {
@@ -136,8 +111,9 @@ label {
 }
 
 .section h2 {
+  color: rgb(0, 77, 128);
   text-align: center;
-  font-family: 'Rampart One', cursive;
+  font-family: "Rampart One", cursive;
 }
 
 .section p {
@@ -146,7 +122,41 @@ label {
 
 .ow {
   box-shadow: 2px 2px rgb(0, 190, 238);
-  background-color:rgb(193, 237, 255);
+  background-color: rgb(193, 237, 255);
+}
+
+/** links **/
+
+.primary-link {
+  /* font-size: 1.1rem; */
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary);
+  width: max-content;
+  border: 1px solid var(--primary);
+  min-width: 140px;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.5rem;
+}
+
+.s-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 157, 248),
+    rgb(61, 210, 255)
+  );
+  width: max-content;
+  min-width: 140px;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.5rem;
+}
+
+.s-link:hover,
+.primary-link:hover {
+  box-shadow: 0px 4px 6px 0 var(--primary);
 }
 
 /** lists **/
@@ -174,7 +184,11 @@ label {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image:  linear-gradient(to right,rgb(0, 157, 248) , rgb(153, 248, 255));
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 157, 248),
+    rgb(153, 248, 255)
+  );
   border-radius: 10px;
 }
 
@@ -182,7 +196,6 @@ label {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
-
 
 /** footer **/
 .footer {
@@ -202,22 +215,22 @@ label {
 .footer a {
   text-decoration: none;
   color: white;
-  padding: 10px;
+  margin: 10px;
 }
 
 /* blog  */
 
-.blog-list{
+.blog-list {
   display: flex;
   flex-direction: row;
   padding: 4%;
 }
 
-.blogbox{
+.blogbox {
   width: 88%;
 }
 
-.bloghead{
+.bloghead {
   font-size: 2.6rem;
 }
 
@@ -227,7 +240,7 @@ label {
 
 .blogs h2 {
   font-size: 2rem;
-  font-family: 'Rampart One', cursive;
+  font-family: "Rampart One", cursive;
 }
 
 small {
