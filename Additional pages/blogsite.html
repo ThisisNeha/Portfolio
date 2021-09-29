@@ -35,18 +35,25 @@
         <div class="para-blog">
           Just like we humans communicate through language, gestures and expressions with each other similarly,
           software products exchange data and functionalities via machine-readable interfaces – APIs.
-          API stands for Application Programming Interface that allows two applications to interact with each other to access data. It communicates through a set of rules and the communication is done using a programming language called "JSON". An
-          API takes requests or response of a user to the system, translates and returns the system's response. APIs generally simplify and speedup the software development. Every action on
+          API stands for Application Programming Interface that allows two applications to interact with each other to
+          access data. It communicates through a set of rules and the communication is done using a programming language
+          called "JSON". An
+          API takes requests or response of a user to the system, translates and returns the system's response. APIs
+          generally simplify and speedup the software development. Every action on
           phone like checking cricket score or checking weather conditions
-          or sending messages, uses an API to access and deliver that message. It can be used to update or delete data. For example: when a user clicks "add to cart" while E-shopping, an API tells the site that a user has added a product to the cart and the website puts the product in cart and the cart is updated. The purpose of an API is to create an exchange of information so seamless that it goes unnoticed by the end user.
-          
-        <ul class="list"><p>There are four types of API actions:</p>
-          <li>GET: requests data from the server</li>
-          <li>POST: sends new information to server</li>
-          <li>PUT: updates existing data on a server</li>
-          <li>DELETE: removes or deletes a blog post</li>
-        </ul>
-      </div>
+          or sending messages, uses an API to access and deliver that message. It can be used to update or delete data.
+          For example: when a user clicks "add to cart" while E-shopping, an API tells the site that a user has added a
+          product to the cart and the website puts the product in cart and the cart is updated. The purpose of an API is
+          to create an exchange of information so seamless that it goes unnoticed by the end user.
+
+          <ul class="list">
+            <p>There are four types of API actions:</p>
+            <li>GET: requests data from the server</li>
+            <li>POST: sends new information to server</li>
+            <li>PUT: updates existing data on a server</li>
+            <li>DELETE: removes or deletes a blog post</li>
+          </ul>
+        </div>
       </section>
 
       <section class="section ow">
@@ -54,17 +61,31 @@
         <small>August, 2021</small>
         <img class="blog-img" src="../image/git.jpg" alt="git-img" />
         <div class="para-blog">
-          GitHub is a website and service that uses Git, the open source version control software that lets multiple users make separate changes to single project at same time. With GitHub, developers can build code, track changes, and innovate solutions to problems. In simpler words, Git is a code kepping mechanism that keeps record of your code/source files, what changes are done to file, who did it and allows you to rervert those changes and move back to initial file. 
-          multiple choices, around README, .gitignore, LICENSE. To get started chose the default options.
-          homework:
-          Read about open source LICENSE. Explore LICENSE of some famous open source repositories.why git
-          create a repo
-          publish repo
-          make commits
-          write good commit messages
-          push commits to server
-          some markdown for documentation
+          GitHub is a code hosting platform for collaboration and version control that lets multiple users to work
+          together and make separate changes to single project at same time. Git is a version control system i.e when developers create some project, they make constant changes to the code, creating new versions. Every developer can see these new changes, download them, and contribute.
+
+          With GitHub, developers can build code,
+          track changes, and innovate solutions to problems. In simpler words, Git is a code keeping mechanism that
+          keeps record of your code/source files, what changes are done to file, who did the change and allows you to
+          rervert those changes just like earsing mistakes with an eraser and move back to initial file.
+          <p>GitHub essentials are:</p>
+          <ul>
+            <li>Repositories : A GitHub repository is a location where all source files for projects are stored. 
+              A GitHub repository should also include a licence file and a README file about the project. Licence file allows the developers to use and make changes to the repository freely. README file is a text file in 'md' format that contains information about project, code, instructions or details.
+            </li>
+            <li>Branches : A GitHub branch is used to work with different versions of a repository at the same time.
+
+              A repository has a master branch (by default) and other branches that are copy of the master branch.
+
+              New Branches can be created by multile developers to work separately on same file and make changes to it.
+              When changes are ready, they can be merged into the master branch. </li>
+            <li>Commits : At GitHub, changes are called commits.
+              Each commit (change) has a description explaining why a change was made and what is it about, called commit message.</li>
+            <li>Pull Requests : Pull Requests are used for GitHub collaboration. With a pull request, a developer asks for changes commited to an repository to be merged (pulled in) with the main repository. It is like a merge request.
+              
+            </li>
           
+          </ul>
         </div>
       </section>
 
@@ -73,22 +94,25 @@
         <small>August, 2021</small>
         <img class="blog-img" src="../image/qs.png" alt="img" />
         <div class="para-blog">
-          The querySelector() is a JS method that helps in searching of elements. This method in HTML is used to return the first element that matches a specified CSS selector(s) in the document. But to return all elements inside element matching the given CSS selector, "querySelectorAll( )".If no matches are found, null is returned.
-        <span class="syntax">syntax : document.querySelectorAll(" CSS Selectors");</span>
-        CSS Selectors are used to select HTML elements based pn their id, classes, types etc.
-        If an element has the id attribute, we can get the element using the below method, no matter where it is.
-        <span class="syntax">var idSelector = document.querySelector("#id");</span>
-        <span class="syntax">var classSelector = document.querySelector(".class");</span>
-        A comma can be used to separate multiple selectors.
-        Pseudo-classes in the CSS selector like :hover and :active are also supported. For example, 
-        <span class="syntax">document.querySelectorAll(':hover'); </span> This will return the collection with elements that the pointer is over now.
-        There are also other methods to select elements but querySelector is more powerful and shorter to write.
+          The querySelector() is a JS method that helps in searching of elements. This method in HTML is used to return
+          the first element that matches a specified CSS selector(s) in the document. But to return all elements inside
+          element matching the given CSS selector, "querySelectorAll( )".If no matches are found, null is returned.
+          <span class="syntax">syntax : document.querySelectorAll(" CSS Selectors");</span>
+          CSS Selectors are used to select HTML elements based pn their id, classes, types etc.
+          If an element has the id attribute, we can get the element using the below method, no matter where it is.
+          <span class="syntax">var idSelector = document.querySelector("#id");</span>
+          <span class="syntax">var classSelector = document.querySelector(".class");</span>
+          A comma can be used to separate multiple selectors.
+          Pseudo-classes in the CSS selector like :hover and :active are also supported. For example,
+          <span class="syntax">document.querySelectorAll(':hover'); </span> This will return the collection with
+          elements that the pointer is over now.
+          There are also other methods to select elements but querySelector is more powerful and shorter to write.
         </div>
       </section>
 
     </div>
   </div>
-  
+
 </body>
 
 </html>
