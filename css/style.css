@@ -268,3 +268,42 @@ small {
   margin: 0.5rem;
   color: rgb(255, 255, 255);
 }
+
+
+@media only screen and (max-width: 600px) {
+  
+  .navigation li{
+    padding: 0;
+  }
+  .navigation a{
+    font-size: 0.9rem;
+  }
+  .hero img{
+    max-width: 250px;
+  }
+  .primary-link{
+    min-width: 60px;
+    padding: 5px 9px;
+  }
+  .s-link{
+    min-width: 60px;
+    padding: 5px 9px;
+  }
+  .footer a{
+    display: flex;
+    flex-direction: column;
+    padding-top:5px ;
+  }
+  .blog-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .blogbox{
+    width: 50%;
+  }
+
+  .para-blog, .list{
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+}
