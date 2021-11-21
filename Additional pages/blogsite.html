@@ -107,8 +107,9 @@
           the first element that matches a specified CSS selector(s) in the document. But to return all elements inside
           element matching the given CSS selector, "querySelectorAll( )".If no matches are found, null is returned.
           <span class="syntax">syntax : document.querySelectorAll(" CSS Selectors");</span>
+          Selectors are the required field that Specifies one or more CSS selectors to match the element.
           CSS Selectors are used to select HTML elements based upon their id, classes, types etc.
-          If an element has the id attribute, we can get the element using the below method, no matter where it is.
+          If the selector matches a class attribute, which might have been used several times in the document, then it will return the first matching element.
           <span class="syntax">var idSelector = document.querySelector("#id");</span>
           <span class="syntax">var classSelector = document.querySelector(".class");</span>
           A comma can be used to separate multiple selectors.
